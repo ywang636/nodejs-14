@@ -1,0 +1,14 @@
+version: 1.0
+runtime: nodejs14
+build:
+  commands:
+    build:
+      - npm install
+  env:
+    - name: FOO
+      value: "bar"
+run:
+  command: node server.js
+  network: 
+    port: 8000
+    env: PORT 
