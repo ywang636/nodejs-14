@@ -8,6 +8,7 @@ build:
     - name: FOO
       value: "bar"
 run:
+  runtime-version: uuid1
   command: node server.js
   network: 
     port: 8000
